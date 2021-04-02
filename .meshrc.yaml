@@ -1,0 +1,15 @@
+serve:
+  playground: false
+  browser: false
+sources:
+  - name: Service Demo
+    handler:
+      openapi:
+        source: ./service-demo-openapi.json
+        baseUrl: http://127.0.0.1:8000/
+        operationHeaders:
+          Authorization: "{context.headers['authorization']}"
+  - name: FakeQL Shop
+    handler:
+      graphql:
+        endpoint: https://fakeql.com/graphql/cade9579438de114c305c686f8936d49
