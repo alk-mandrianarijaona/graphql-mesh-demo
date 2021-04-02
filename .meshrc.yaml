@@ -13,3 +13,13 @@ sources:
     handler:
       graphql:
         endpoint: https://fakeql.com/graphql/cade9579438de114c305c686f8936d49
+transforms:
+  - rename: 
+      mode: wrap 
+      renames:
+        - from:
+            type: Query
+            field: getDemoUsersV1UserIdGet
+          to:
+            type: Query
+            field: getUser

@@ -700,6 +700,17 @@
     "@n1ru4l/in-memory-live-query-store" "0.6.2"
     graphql-jit "0.5.0"
 
+"@graphql-mesh/transform-rename@^0.8.9":
+  version "0.8.9"
+  resolved "https://registry.yarnpkg.com/@graphql-mesh/transform-rename/-/transform-rename-0.8.9.tgz#9d5027e06ba371138e7dd177a945c125d2ce09c8"
+  integrity sha512-zazg44D1dPxjqZMytyb6usSnl9XYZUDOo6TF5Ut4gmYbJ3fw3/lJp22jHNxrjOUbOoiQMNOus6jNtkXVu9122A==
+  dependencies:
+    "@graphql-mesh/types" "0.38.0"
+    "@graphql-mesh/utils" "0.10.0"
+    "@graphql-tools/delegate" "7.1.1"
+    "@graphql-tools/utils" "7.7.1"
+    "@graphql-tools/wrap" "7.0.5"
+
 "@graphql-mesh/types@0.35.1":
   version "0.35.1"
   resolved "https://registry.yarnpkg.com/@graphql-mesh/types/-/types-0.35.1.tgz#b2eec8ed26c8df25f9bbd72175c4d9e109dc9f36"
