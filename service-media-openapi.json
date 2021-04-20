@@ -1,0 +1,865 @@
+{
+  "info": {
+    "version": "1.0.0",
+    "description": "API documentation for service-media",
+    "title": "media"
+  },
+  "paths": {
+    "/media/v4/products/videos/save": {
+      "post": {
+        "security": [{ "bearer": [] }],
+        "tags": ["product"],
+        "responses": {
+          "200": { "description": "successful operation" },
+          "401": { "description": "unauthorized" },
+          "403": { "description": "forbidden" }
+        },
+        "parameters": [],
+        "description": "Bulk save the assets for products."
+      }
+    },
+    "/media/v4/products/enrichedcontents/refuse": {
+      "post": {
+        "security": [{ "bearer": [] }],
+        "tags": ["product"],
+        "responses": {
+          "200": { "description": "successful operation" },
+          "401": { "description": "unauthorized" },
+          "403": { "description": "forbidden" }
+        },
+        "parameters": [],
+        "description": "Bulk refuse the assets for products."
+      }
+    },
+    "/media/v2/picture/optimize": {
+      "post": {
+        "security": [{ "bearer": [] }],
+        "responses": {
+          "200": { "description": "successful operation" },
+          "401": { "description": "unauthorized" },
+          "403": { "description": "forbidden" }
+        },
+        "parameters": [],
+        "tags": ["picture"]
+      }
+    },
+    "/media/v4/products/pictures/duplicate": {
+      "post": {
+        "security": [{ "bearer": [] }],
+        "tags": ["product"],
+        "responses": {
+          "200": { "description": "successful operation" },
+          "401": { "description": "unauthorized" },
+          "403": { "description": "forbidden" }
+        },
+        "parameters": [],
+        "description": "Bulk duplicate the assets for products."
+      }
+    },
+    "/media/v3/assets/fieldmetadata": {
+      "get": {
+        "security": [{ "bearer": [] }],
+        "tags": ["assets"],
+        "responses": {
+          "200": { "description": "successful operation" },
+          "401": { "description": "unauthorized" },
+          "403": { "description": "forbidden" }
+        },
+        "parameters": [],
+        "description": " returns the list of emulated FieldMetadata, used in:\n        - documentation\n        - export\n        - import\n        "
+      }
+    },
+    "/media/v4/products/videos/diff_multiple": {
+      "post": {
+        "security": [{ "bearer": [] }],
+        "responses": {
+          "200": { "description": "successful operation" },
+          "401": { "description": "unauthorized" },
+          "403": { "description": "forbidden" }
+        },
+        "parameters": [],
+        "tags": ["product"]
+      }
+    },
+    "/media/v4/products/pictures/accept": {
+      "post": {
+        "security": [{ "bearer": [] }],
+        "tags": ["product"],
+        "responses": {
+          "200": { "description": "successful operation" },
+          "401": { "description": "unauthorized" },
+          "403": { "description": "forbidden" }
+        },
+        "parameters": [],
+        "description": "Bulk accept the assets for products."
+      }
+    },
+    "/media/v3/product/pictures/download": {
+      "post": {
+        "security": [{ "bearer": [] }],
+        "responses": {
+          "200": { "description": "successful operation" },
+          "401": { "description": "unauthorized" },
+          "403": { "description": "forbidden" }
+        },
+        "parameters": [],
+        "tags": ["product"]
+      }
+    },
+    "/media/v4/public/picture/upload": {
+      "post": {
+        "security": [{ "bearer": [] }],
+        "responses": {
+          "200": { "description": "successful operation" },
+          "401": { "description": "unauthorized" },
+          "403": { "description": "forbidden" }
+        },
+        "parameters": [],
+        "tags": ["public"]
+      }
+    },
+    "/media/v4/products/pictures/delete": {
+      "post": {
+        "security": [{ "bearer": [] }],
+        "responses": {
+          "200": { "description": "successful operation" },
+          "401": { "description": "unauthorized" },
+          "403": { "description": "forbidden" }
+        },
+        "parameters": [],
+        "tags": ["product"]
+      }
+    },
+    "/media/v4/products/pictures/diff_multiple": {
+      "post": {
+        "security": [{ "bearer": [] }],
+        "responses": {
+          "200": { "description": "successful operation" },
+          "401": { "description": "unauthorized" },
+          "403": { "description": "forbidden" }
+        },
+        "parameters": [],
+        "tags": ["product"]
+      }
+    },
+    "/media/v4/products/pictures/save": {
+      "post": {
+        "security": [{ "bearer": [] }],
+        "tags": ["product"],
+        "responses": {
+          "200": { "description": "successful operation" },
+          "401": { "description": "unauthorized" },
+          "403": { "description": "forbidden" }
+        },
+        "parameters": [],
+        "description": "Bulk save the assets for products."
+      }
+    },
+    "/media/v3/productdocument": {
+      "post": {
+        "security": [{ "bearer": [] }],
+        "responses": {
+          "200": { "description": "successful operation" },
+          "401": { "description": "unauthorized" },
+          "403": { "description": "forbidden" }
+        },
+        "parameters": [],
+        "tags": ["productdocument"]
+      }
+    },
+    "/media/v4/products/assets/delete": {
+      "post": {
+        "security": [{ "bearer": [] }],
+        "tags": ["product"],
+        "responses": {
+          "200": { "description": "successful operation" },
+          "401": { "description": "unauthorized" },
+          "403": { "description": "forbidden" }
+        },
+        "parameters": [],
+        "description": "Route to delete all product assets."
+      }
+    },
+    "/media/v4/products/videos/duplicate": {
+      "post": {
+        "security": [{ "bearer": [] }],
+        "tags": ["product"],
+        "responses": {
+          "200": { "description": "successful operation" },
+          "401": { "description": "unauthorized" },
+          "403": { "description": "forbidden" }
+        },
+        "parameters": [],
+        "description": "Bulk duplicate the assets for products."
+      }
+    },
+    "/media/v3/productdocument/upload": {
+      "post": {
+        "security": [{ "bearer": [] }],
+        "responses": {
+          "200": { "description": "successful operation" },
+          "401": { "description": "unauthorized" },
+          "403": { "description": "forbidden" }
+        },
+        "parameters": [],
+        "tags": ["productdocument"]
+      }
+    },
+    "/media/v3/brandpicture/upload": {
+      "post": {
+        "security": [{ "bearer": [] }],
+        "responses": {
+          "200": { "description": "successful operation" },
+          "401": { "description": "unauthorized" },
+          "403": { "description": "forbidden" }
+        },
+        "parameters": [],
+        "tags": ["brand"]
+      }
+    },
+    "/media/v4/products/documents/refuse": {
+      "post": {
+        "security": [{ "bearer": [] }],
+        "tags": ["product"],
+        "responses": {
+          "200": { "description": "successful operation" },
+          "401": { "description": "unauthorized" },
+          "403": { "description": "forbidden" }
+        },
+        "parameters": [],
+        "description": "Bulk refuse the assets for products."
+      }
+    },
+    "/media/v4/products/documents/duplicate": {
+      "post": {
+        "security": [{ "bearer": [] }],
+        "tags": ["product"],
+        "responses": {
+          "200": { "description": "successful operation" },
+          "401": { "description": "unauthorized" },
+          "403": { "description": "forbidden" }
+        },
+        "parameters": [],
+        "description": "Bulk duplicate the assets for products."
+      }
+    },
+    "/media/v3/organizationpicture/{organization_id}/{picture_type}": {
+      "delete": {
+        "security": [{ "bearer": [] }],
+        "responses": {
+          "200": { "description": "successful operation" },
+          "401": { "description": "unauthorized" },
+          "403": { "description": "forbidden" }
+        },
+        "parameters": [],
+        "tags": ["organization"]
+      }
+    },
+    "/media/v3/product/pictures/download/urls": {
+      "post": {
+        "security": [{ "bearer": [] }],
+        "responses": {
+          "200": { "description": "successful operation" },
+          "401": { "description": "unauthorized" },
+          "403": { "description": "forbidden" }
+        },
+        "parameters": [],
+        "tags": ["product"]
+      }
+    },
+    "/media/v3/assets": {
+      "get": {
+        "security": [{ "bearer": [] }],
+        "tags": ["assets"],
+        "responses": {
+          "200": { "description": "successful operation" },
+          "401": { "description": "unauthorized" },
+          "403": { "description": "forbidden" }
+        },
+        "parameters": [],
+        "description": "Route to retrieve all product assets of provided product and organization."
+      },
+      "delete": {
+        "security": [{ "bearer": [] }],
+        "tags": ["assets"],
+        "responses": {
+          "200": { "description": "successful operation" },
+          "401": { "description": "unauthorized" },
+          "403": { "description": "forbidden" }
+        },
+        "parameters": [],
+        "description": "TODO CCS: deprecate this in favor of media.v4.product.assets.delete"
+      }
+    },
+    "/media/v4/products/assets/diffs": {
+      "post": {
+        "security": [{ "bearer": [] }],
+        "responses": {
+          "200": { "description": "successful operation" },
+          "401": { "description": "unauthorized" },
+          "403": { "description": "forbidden" }
+        },
+        "parameters": [],
+        "tags": ["product"]
+      }
+    },
+    "/media/v4/products/videos/refuse": {
+      "post": {
+        "security": [{ "bearer": [] }],
+        "tags": ["product"],
+        "responses": {
+          "200": { "description": "successful operation" },
+          "401": { "description": "unauthorized" },
+          "403": { "description": "forbidden" }
+        },
+        "parameters": [],
+        "description": "Bulk refuse the assets for products."
+      }
+    },
+    "/media/v3/productpicture/upload": {
+      "post": {
+        "security": [{ "bearer": [] }],
+        "responses": {
+          "200": { "description": "successful operation" },
+          "401": { "description": "unauthorized" },
+          "403": { "description": "forbidden" }
+        },
+        "parameters": [],
+        "tags": ["productpicture"]
+      }
+    },
+    "/media/v4/products/enrichedcontents/save": {
+      "post": {
+        "security": [{ "bearer": [] }],
+        "tags": ["product"],
+        "responses": {
+          "200": { "description": "successful operation" },
+          "401": { "description": "unauthorized" },
+          "403": { "description": "forbidden" }
+        },
+        "parameters": [],
+        "description": "Bulk save the assets for products."
+      }
+    },
+    "/media/v3/productvideo": {
+      "post": {
+        "security": [{ "bearer": [] }],
+        "responses": {
+          "200": { "description": "successful operation" },
+          "401": { "description": "unauthorized" },
+          "403": { "description": "forbidden" }
+        },
+        "parameters": [],
+        "tags": ["productvideo"]
+      }
+    },
+    "/media/v4/products/documents/accept": {
+      "post": {
+        "security": [{ "bearer": [] }],
+        "tags": ["product"],
+        "responses": {
+          "200": { "description": "successful operation" },
+          "401": { "description": "unauthorized" },
+          "403": { "description": "forbidden" }
+        },
+        "parameters": [],
+        "description": "Bulk accept the assets for products."
+      }
+    },
+    "/media/v4/product/assets/expired/count": {
+      "post": {
+        "security": [{ "bearer": [] }],
+        "tags": ["assets"],
+        "responses": {
+          "200": { "description": "successful operation" },
+          "401": { "description": "unauthorized" },
+          "403": { "description": "forbidden" }
+        },
+        "parameters": [],
+        "description": "Route to retrieve count of expired assets of provided products and organizations."
+      }
+    },
+    "/media/v4/products/videos/accept": {
+      "post": {
+        "security": [{ "bearer": [] }],
+        "tags": ["product"],
+        "responses": {
+          "200": { "description": "successful operation" },
+          "401": { "description": "unauthorized" },
+          "403": { "description": "forbidden" }
+        },
+        "parameters": [],
+        "description": "Bulk accept the assets for products."
+      }
+    },
+    "/media/v4/products/assets/lastrequests/enrich": {
+      "post": {
+        "security": [{ "bearer": [] }],
+        "responses": {
+          "200": { "description": "successful operation" },
+          "401": { "description": "unauthorized" },
+          "403": { "description": "forbidden" }
+        },
+        "parameters": [],
+        "tags": ["product"]
+      }
+    },
+    "/media/v4/products/document/specificdata": {
+      "post": {
+        "security": [{ "bearer": [] }],
+        "responses": {
+          "200": { "description": "successful operation" },
+          "401": { "description": "unauthorized" },
+          "403": { "description": "forbidden" }
+        },
+        "parameters": [],
+        "tags": ["product"]
+      }
+    },
+    "/media/v4/products/enrichedcontents/accept": {
+      "post": {
+        "security": [{ "bearer": [] }],
+        "tags": ["product"],
+        "responses": {
+          "200": { "description": "successful operation" },
+          "401": { "description": "unauthorized" },
+          "403": { "description": "forbidden" }
+        },
+        "parameters": [],
+        "description": "Bulk accept the assets for products."
+      }
+    },
+    "/media/v4/products/documents/diff_multiple": {
+      "post": {
+        "security": [{ "bearer": [] }],
+        "responses": {
+          "200": { "description": "successful operation" },
+          "401": { "description": "unauthorized" },
+          "403": { "description": "forbidden" }
+        },
+        "parameters": [],
+        "tags": ["product"]
+      }
+    },
+    "/media/v4/products/documents/delete": {
+      "post": {
+        "security": [{ "bearer": [] }],
+        "responses": {
+          "200": { "description": "successful operation" },
+          "401": { "description": "unauthorized" },
+          "403": { "description": "forbidden" }
+        },
+        "parameters": [],
+        "tags": ["product"]
+      }
+    },
+    "/media/v2/picture/standard": {
+      "post": {
+        "security": [{ "bearer": [] }],
+        "tags": ["picture"],
+        "responses": {
+          "200": { "description": "successful operation" },
+          "401": { "description": "unauthorized" },
+          "403": { "description": "forbidden" }
+        },
+        "parameters": [],
+        "description": "\n        This route is legacy and used only for brand\n        Sets a picture as part of the active\n        standard pictures of an entity\n        eg:\n        - the 'logo' picture of a brand\n\n        Specifications:\n\n        - Method: POST\n        - parameters:\n          - entity_id: product_id\n          - entity_type: 'product'\n          - entity_picture_id\n        "
+      }
+    },
+    "/media/v4/products/packshots/share": {
+      "post": {
+        "security": [{ "bearer": [] }],
+        "tags": ["product"],
+        "responses": {
+          "200": { "description": "successful operation" },
+          "401": { "description": "unauthorized" },
+          "403": { "description": "forbidden" }
+        },
+        "parameters": [],
+        "description": "Bulk share the packshots for products."
+      }
+    },
+    "/media/v4/products/picture/specificdata": {
+      "post": {
+        "security": [{ "bearer": [] }],
+        "responses": {
+          "200": { "description": "successful operation" },
+          "401": { "description": "unauthorized" },
+          "403": { "description": "forbidden" }
+        },
+        "parameters": [],
+        "tags": ["product"]
+      }
+    },
+    "/media/v4/products/assets/specificdata": {
+      "delete": {
+        "security": [{ "bearer": [] }],
+        "responses": {
+          "200": { "description": "successful operation" },
+          "401": { "description": "unauthorized" },
+          "403": { "description": "forbidden" }
+        },
+        "parameters": [],
+        "tags": ["product"]
+      }
+    },
+    "/media/v3/product/enrichedcontentpicture/upload": {
+      "post": {
+        "security": [{ "bearer": [] }],
+        "responses": {
+          "200": { "description": "successful operation" },
+          "401": { "description": "unauthorized" },
+          "403": { "description": "forbidden" }
+        },
+        "parameters": [],
+        "tags": ["productenrichedcontent"]
+      }
+    },
+    "/media/v3/productdocument/{id}": {
+      "put": {
+        "security": [{ "bearer": [] }],
+        "responses": {
+          "200": { "description": "successful operation" },
+          "401": { "description": "unauthorized" },
+          "403": { "description": "forbidden" }
+        },
+        "parameters": [],
+        "tags": ["productdocument"]
+      },
+      "delete": {
+        "security": [{ "bearer": [] }],
+        "responses": {
+          "200": { "description": "successful operation" },
+          "401": { "description": "unauthorized" },
+          "403": { "description": "forbidden" }
+        },
+        "parameters": [],
+        "tags": ["productdocument"]
+      }
+    },
+    "/media/v3/organizationpicture/upload": {
+      "post": {
+        "security": [{ "bearer": [] }],
+        "responses": {
+          "200": { "description": "successful operation" },
+          "401": { "description": "unauthorized" },
+          "403": { "description": "forbidden" }
+        },
+        "parameters": [],
+        "tags": ["organization"]
+      }
+    },
+    "/media/v3/concept/picture/upload": {
+      "post": {
+        "security": [{ "bearer": [] }],
+        "responses": {
+          "200": { "description": "successful operation" },
+          "401": { "description": "unauthorized" },
+          "403": { "description": "forbidden" }
+        },
+        "parameters": [],
+        "tags": ["concept"]
+      }
+    },
+    "/media/v3/brandpicture": {
+      "post": {
+        "security": [{ "bearer": [] }],
+        "responses": {
+          "200": { "description": "successful operation" },
+          "401": { "description": "unauthorized" },
+          "403": { "description": "forbidden" }
+        },
+        "parameters": [],
+        "tags": ["brand"]
+      },
+      "get": {
+        "security": [{ "bearer": [] }],
+        "responses": {
+          "200": { "description": "successful operation" },
+          "401": { "description": "unauthorized" },
+          "403": { "description": "forbidden" }
+        },
+        "parameters": [],
+        "tags": ["brand"]
+      }
+    },
+    "/media/v3/brandpicture/{id}": {
+      "put": {
+        "security": [{ "bearer": [] }],
+        "responses": {
+          "200": { "description": "successful operation" },
+          "401": { "description": "unauthorized" },
+          "403": { "description": "forbidden" }
+        },
+        "parameters": [],
+        "tags": ["brand"]
+      },
+      "delete": {
+        "security": [{ "bearer": [] }],
+        "responses": {
+          "200": { "description": "successful operation" },
+          "401": { "description": "unauthorized" },
+          "403": { "description": "forbidden" }
+        },
+        "parameters": [],
+        "tags": ["brand"]
+      },
+      "get": {
+        "security": [{ "bearer": [] }],
+        "responses": {
+          "200": { "description": "successful operation" },
+          "401": { "description": "unauthorized" },
+          "403": { "description": "forbidden" }
+        },
+        "parameters": [],
+        "tags": ["brand"]
+      }
+    },
+    "/media/v3/productpicture/{id}": {
+      "put": {
+        "security": [{ "bearer": [] }],
+        "responses": {
+          "200": { "description": "successful operation" },
+          "401": { "description": "unauthorized" },
+          "403": { "description": "forbidden" }
+        },
+        "parameters": [],
+        "tags": ["productpicture"]
+      },
+      "delete": {
+        "security": [{ "bearer": [] }],
+        "responses": {
+          "200": { "description": "successful operation" },
+          "401": { "description": "unauthorized" },
+          "403": { "description": "forbidden" }
+        },
+        "parameters": [],
+        "tags": ["productpicture"]
+      }
+    },
+    "/media/v3/enrichedcontent/{id}": {
+      "put": {
+        "security": [{ "bearer": [] }],
+        "responses": {
+          "200": { "description": "successful operation" },
+          "401": { "description": "unauthorized" },
+          "403": { "description": "forbidden" }
+        },
+        "parameters": [],
+        "tags": ["productenrichedcontent"]
+      },
+      "delete": {
+        "security": [{ "bearer": [] }],
+        "responses": {
+          "200": { "description": "successful operation" },
+          "401": { "description": "unauthorized" },
+          "403": { "description": "forbidden" }
+        },
+        "parameters": [],
+        "tags": ["productenrichedcontent"]
+      }
+    },
+    "/media/v4/products/enrichedcontents/duplicate": {
+      "post": {
+        "security": [{ "bearer": [] }],
+        "tags": ["product"],
+        "responses": {
+          "200": { "description": "successful operation" },
+          "401": { "description": "unauthorized" },
+          "403": { "description": "forbidden" }
+        },
+        "parameters": [],
+        "description": "Bulk duplicate the assets for products."
+      }
+    },
+    "/media/v3/enrichedcontent": {
+      "post": {
+        "security": [{ "bearer": [] }],
+        "responses": {
+          "200": { "description": "successful operation" },
+          "401": { "description": "unauthorized" },
+          "403": { "description": "forbidden" }
+        },
+        "parameters": [],
+        "tags": ["productenrichedcontent"]
+      }
+    },
+    "/media/v4/product/assets/bulk": {
+      "post": {
+        "security": [{ "bearer": [] }],
+        "tags": ["assets"],
+        "responses": {
+          "200": { "description": "successful operation" },
+          "401": { "description": "unauthorized" },
+          "403": { "description": "forbidden" }
+        },
+        "parameters": [],
+        "description": "Route to retrieve all product assets of provided products and organizations."
+      }
+    },
+    "/media/v4/products/enrichedcontent/specificdata": {
+      "post": {
+        "security": [{ "bearer": [] }],
+        "responses": {
+          "200": { "description": "successful operation" },
+          "401": { "description": "unauthorized" },
+          "403": { "description": "forbidden" }
+        },
+        "parameters": [],
+        "tags": ["product"]
+      }
+    },
+    "/media/v4/products/documents/save": {
+      "post": {
+        "security": [{ "bearer": [] }],
+        "tags": ["product"],
+        "responses": {
+          "200": { "description": "successful operation" },
+          "401": { "description": "unauthorized" },
+          "403": { "description": "forbidden" }
+        },
+        "parameters": [],
+        "description": "Bulk save the assets for products."
+      }
+    },
+    "/media/v4/product/assets/share": {
+      "post": {
+        "security": [{ "bearer": [] }],
+        "responses": {
+          "200": { "description": "successful operation" },
+          "401": { "description": "unauthorized" },
+          "403": { "description": "forbidden" }
+        },
+        "parameters": [],
+        "tags": ["service-product"]
+      }
+    },
+    "/media/v4/product/picture/upload": {
+      "post": {
+        "security": [{ "bearer": [] }],
+        "responses": {
+          "200": { "description": "successful operation" },
+          "401": { "description": "unauthorized" },
+          "403": { "description": "forbidden" }
+        },
+        "parameters": [],
+        "tags": ["product"]
+      }
+    },
+    "/media/v4/products/enrichedcontents/diff_multiple": {
+      "post": {
+        "security": [{ "bearer": [] }],
+        "responses": {
+          "200": { "description": "successful operation" },
+          "401": { "description": "unauthorized" },
+          "403": { "description": "forbidden" }
+        },
+        "parameters": [],
+        "tags": ["product"]
+      }
+    },
+    "/media/v3/productvideo/{id}": {
+      "put": {
+        "security": [{ "bearer": [] }],
+        "responses": {
+          "200": { "description": "successful operation" },
+          "401": { "description": "unauthorized" },
+          "403": { "description": "forbidden" }
+        },
+        "parameters": [],
+        "tags": ["productvideo"]
+      },
+      "delete": {
+        "security": [{ "bearer": [] }],
+        "responses": {
+          "200": { "description": "successful operation" },
+          "401": { "description": "unauthorized" },
+          "403": { "description": "forbidden" }
+        },
+        "parameters": [],
+        "tags": ["productvideo"]
+      }
+    },
+    "/media/v4/products/assets/specificdata/list": {
+      "post": {
+        "security": [{ "bearer": [] }],
+        "responses": {
+          "200": { "description": "successful operation" },
+          "401": { "description": "unauthorized" },
+          "403": { "description": "forbidden" }
+        },
+        "parameters": [],
+        "tags": ["product"]
+      }
+    },
+    "/media/v4/products/videos/delete": {
+      "post": {
+        "security": [{ "bearer": [] }],
+        "responses": {
+          "200": { "description": "successful operation" },
+          "401": { "description": "unauthorized" },
+          "403": { "description": "forbidden" }
+        },
+        "parameters": [],
+        "tags": ["product"]
+      }
+    },
+    "/media/v3/product/assets/duplicate": {
+      "post": {
+        "security": [{ "bearer": [] }],
+        "tags": ["product"],
+        "responses": {
+          "200": { "description": "successful operation" },
+          "401": { "description": "unauthorized" },
+          "403": { "description": "forbidden" }
+        },
+        "parameters": [],
+        "description": "\n        Duplicate asset from one tuple Product/CO to another Product/CO\n        Ex of use cases: product duplication / jarvis reset demo\n        "
+      }
+    },
+    "/media/v3/productpicture": {
+      "post": {
+        "security": [{ "bearer": [] }],
+        "responses": {
+          "200": { "description": "successful operation" },
+          "401": { "description": "unauthorized" },
+          "403": { "description": "forbidden" }
+        },
+        "parameters": [],
+        "tags": ["productpicture"]
+      }
+    },
+    "/media/v4/products/pictures/refuse": {
+      "post": {
+        "security": [{ "bearer": [] }],
+        "tags": ["product"],
+        "responses": {
+          "200": { "description": "successful operation" },
+          "401": { "description": "unauthorized" },
+          "403": { "description": "forbidden" }
+        },
+        "parameters": [],
+        "description": "Bulk refuse the assets for products."
+      }
+    },
+    "/media/v4/products/video/specificdata": {
+      "post": {
+        "security": [{ "bearer": [] }],
+        "responses": {
+          "200": { "description": "successful operation" },
+          "401": { "description": "unauthorized" },
+          "403": { "description": "forbidden" }
+        },
+        "parameters": [],
+        "tags": ["product"]
+      }
+    }
+  },
+  "components": {
+    "securitySchemes": {
+      "bearer": { "scheme": "bearer", "type": "http", "bearerFormat": "JWT" }
+    }
+  },
+  "openapi": "3.0.2"
+}
+

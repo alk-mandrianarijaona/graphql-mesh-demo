@@ -11,5 +11,9 @@
     "@graphql-mesh/transform-rename": "^0.8.9",
     "graphql": "^15.5.0",
     "graphql-mesh": "^0.0.1"
+  },
+  "devDependencies": {
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.3"
   }
 }

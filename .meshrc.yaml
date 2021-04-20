@@ -1,6 +1,15 @@
 serve:
   playground: false
   browser: false
+require:
+  - ts-node/register/transpile-only
+additionalResolvers:
+  - ./src/custom-resolvers.ts  
+additionalTypeDefs: |
+  extend type User {
+    isAlkemicsAdmin: Boolean
+    recentOrders: [Order]
+  }
 sources:
   - name: Service Demo
     handler:
