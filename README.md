@@ -4,7 +4,7 @@
 
 - `yarn install`
 - `yarn graphql-mesh serve`
-- Open (localhost:4000)[http://localhost:4000] to play with the server
+- Open [localhost:4000](http://localhost:4000) to play with the server
 
 ## Edit mesh
 
