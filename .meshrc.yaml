@@ -1,27 +1,30 @@
 serve:
-  playground: false
+  playground: true
   browser: false
 require:
   - ts-node/register/transpile-only
+additionalTypeDefs: |
+  extend type Vehicle {
+    isOwnedByAlkemics: Boolean
+  }
 additionalResolvers:
   - ./src/custom-resolvers.ts  
-additionalTypeDefs: |
-  extend type User {
-    isAlkemicsAdmin: Boolean
-    recentOrders: [Order]
-  }
 sources:
   - name: Service Demo
     handler:
       openapi:
         source: ./service-demo-openapi.json
-        baseUrl: http://127.0.0.1:8000/
+        baseUrl: ${DEMO_APP_URL}
         operationHeaders:
           Authorization: "{context.headers['authorization']}"
-  - name: FakeQL Shop
+  - name: Swapi
     handler:
       graphql:
-        endpoint: https://fakeql.com/graphql/cade9579438de114c305c686f8936d49
+        endpoint: https://swapi-graphql.netlify.app/.netlify/functions/index
+  - name: SpaceX
+    handler:
+      graphql:
+        endpoint: https://api.spacex.land/graphql/
 transforms:
   - rename: 
       mode: wrap 
@@ -32,3 +35,4 @@ transforms:
           to:
             type: Query
             field: getUser
+
