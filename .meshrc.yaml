@@ -7,6 +7,10 @@ additionalTypeDefs: |
   extend type Vehicle {
     isOwnedByAlkemics: Boolean
   }
+  extend type User {
+    slackName: String
+    gravatarUrl: String
+  }
 additionalResolvers:
   - ./src/custom-resolvers.ts  
 sources:
